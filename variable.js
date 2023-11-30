@@ -3,7 +3,7 @@
 // const :  값 할당 후 바꿀 수 없음XX
 // let : 선언 후에 값을 바꿀 수 있음OO
 
-const person = {name : "oh", age : 23}; //콜론 앞이 프로퍼티, 값
+const person = {name : "oh", age : 23}; //콜론 앞이 프로퍼티, 값   //json
 
 console.log(person.name);
 console.log(person.age);
@@ -35,3 +35,10 @@ function modify(p) { //p는 파라미터
 }
 
 // js의 객체들은 reference type? 바꾸면 같이 바뀐다
+
+
+//js는 동적으로 property 생성 가능
+const p = {};
+p.name = "kim";
+const o = new Object();
+o.name = "kang";
