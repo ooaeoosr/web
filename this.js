@@ -1,3 +1,4 @@
+// this 는 호출에 관련
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -14,3 +15,25 @@ console.log(p);
 
 const p2 = new Person("king",87);
 console.log(p2);
+
+//지금까지는 생성자 함수를 호출했을 때 this임
+
+function foo() {
+    console.log(this.age);
+}
+
+// 함수는 function 객체
+// Function.prototype.apply 라는 함수가 있음
+foo.apply(p);
+foo.apply(p2);
+
+p.foo = foo; 
+// this <= Person {name: "hong", age: 25}
+p.foo(); //객체.함수 호출하면 그 함수의 this는 앞쪽에 있는 객체가 됨?
+
+//this <= window
+foo();
+
+// 그냥 함수 호출 시 this는 window or null
+//  생성자 함수로 호출되었을 때 this는 새로 만들어진 빈 객체가 this로 바인딩 된다
+
