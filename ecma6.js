@@ -14,11 +14,27 @@ c = 3;
 
 (function(){
     let funcArr = [];
+    var i;
     for(var i=0; i<10; i++){
         funcArr.push(function() {
             return i;
         });
     }
+    // i = 10
+    for(let func of funcArr){
+        console.log(func());
+    }
+})();
+//위의 내용은 10만 출력
+
+(function(){
+    let funcArr = [];
+    for(let i=0; i<10; i++){
+        funcArr.push(function() {
+            return i;
+        });
+    }
+    // i = 10
     for(let func of funcArr){
         console.log(func());
     }
