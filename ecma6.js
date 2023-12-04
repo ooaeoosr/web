@@ -12,19 +12,19 @@ b = 2;
 var c = 1;
 c = 3;
 
-(function(){
-    let funcArr = [];
-    var i;
-    for(var i=0; i<10; i++){
-        funcArr.push(function() {
-            return i;
-        });
-    }
-    // i = 10
-    for(let func of funcArr){
-        console.log(func());
-    }
-})();
+// (function(){
+//     let funcArr = [];
+//     var i;
+//     for(var i=0; i<10; i++){
+//         funcArr.push(function() {
+//             return i;
+//         });
+//     }
+//     // i = 10
+//     for(let func of funcArr){
+//         console.log(func());
+//     }
+// })();
 //위의 내용은 10만 출력
 
 (function(){
@@ -38,5 +38,8 @@ c = 3;
     for(let func of funcArr){
         console.log(func());
     }
-})();
+
+    const func = (x,y) => x+y;
+    console.log(func(1,2));
+})();// 지역스코프
 
