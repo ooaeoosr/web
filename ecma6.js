@@ -12,4 +12,14 @@ b = 2;
 var c = 1;
 c = 3;
 
-console.log(b);
+(function(){
+    let funcArr = [];
+    for(var i=0; i<10; i++){
+        funcArr.push(function() {
+            return i;
+        });
+    }
+    for(let func of funcArr){
+        console.log(func());
+    }
+})();
