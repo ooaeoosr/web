@@ -41,5 +41,13 @@ c = 3;
     //화살표 함수, lambda
     const func = (x,y) => x+y;
     console.log(func(1,2));
+
+    //default value, ... 나머지 파라미터를 배열과 유사하게 받음
+    function foo(x=1, y=2, ...rest){
+        console.log(x,y, rest);
+    }
+    foo(2,3);
+    foo();
+    foo(1,2,3,4,5);
 })();// 지역스코프 let?
 
