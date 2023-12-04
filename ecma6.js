@@ -23,3 +23,4 @@ c = 3;
         console.log(func());
     }
 })();
+
