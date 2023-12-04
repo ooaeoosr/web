@@ -1,6 +1,6 @@
 // Person.prototype __proto__ << object.prototype
 Person.prototype.getVersion = function(){
-    return this.version;
+    return this.version; 
 };
 Person.prototype.version = 1.5;
 
