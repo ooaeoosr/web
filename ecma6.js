@@ -38,8 +38,8 @@ c = 3;
     for(let func of funcArr){
         console.log(func());
     }
-
+    //화살표 함수, lambda
     const func = (x,y) => x+y;
     console.log(func(1,2));
-})();// 지역스코프
+})();// 지역스코프 let?
 
