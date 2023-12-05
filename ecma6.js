@@ -49,5 +49,11 @@ c = 3;
     foo(2,3);
     foo();
     foo(1,2,3,4,5);
+
+    const arr1 = [1,2,3];
+    const arr2 = [4,5,6];
+    const totalArr = [...arr1, ...arr2];
+    console.log(totalArr);
+    
 })();// 지역스코프 let?
 
