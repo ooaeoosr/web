@@ -1,7 +1,7 @@
 //var, const, let  <- 자바스크립트에서 변수 선언
 // var : 선언 후에 값을 바꿀 수 있음OO
 // const :  값 할당 후 바꿀 수 없음XX
-// let : 선언 후에 값을 바꿀 수 있음OO
+// let : 선언 후에 값을 바꿀 수 있음OO 
 
 const person = {name : "oh", age : 23}; //콜론 앞이 프로퍼티, 값   //json
 

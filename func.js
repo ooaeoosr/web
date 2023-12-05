@@ -1,4 +1,4 @@
-//global scope
+//global scope  
 const x = 1;
 const y = 2;
 const name = "kang"; //변수 지정시 type 설정이 없음
