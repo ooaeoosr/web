@@ -7,7 +7,7 @@ router.get('/main', (req, res)=>{ //req= 보낸거 , res=받는거
 });
 
 router.get('/about',(req,res)=>{
-    res.render('/about', {title:"about"});
+    res.render('about', {title:'about'});
 });     //익명함수의 축약형태 : lambda
 
 module.exports = router; //module router을 꺼내서 씀
